@@ -1,24 +1,9 @@
-<!-- redirect.html -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <script>
-        // Lấy các tham số từ URL
-        const params = new URLSearchParams(window.location.search);
-        const token = params.get('token');
-        const PayerID = params.get('PayerID');
-
-        // Chuyển hướng đến custom scheme của ứng dụng
-        if (token && PayerID) {
-            window.location.href = `movieapp://payment/success?token=${token}&PayerID=${PayerID}`;
-        } else {
-            window.location.href = `movieapp://payment/cancel`;
-        }
-    </script>
-</head>
-<body>
-    <p>Redirecting...</p>
-</body>
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+    <body>
+        <p>This is an example of a simple HTML page with one paragraph.</p>
+    </body>
 </html>
